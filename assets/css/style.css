@@ -1,0 +1,92 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+html{ 
+    background: url("https://images.unsplash.com/photo-1505832018823-50331d70d237?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=264782b5bf241111af67f141861ec356&auto=format&fit=crop&w=900&q=60") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    text-shadow: 2px 2px 2px rgb(0, 195, 255);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+h1, h3, .panel-title, .panel-body {
+    color: aliceblue;
+}
+
+th, h2 {
+    color: lightblue;
+}
+
+tr:hover {
+    background: #000;
+}
+
+tr:hover td {
+    background: rgba(105, 105, 105, .2);
+    color: yellow;
+}
+
+td {
+    font-size: 13px;
+    font-weight: 80;
+}
+
+label {
+    font-size: 14px;
+}
+
+button{
+    border-color: rgb(181, 175, 238);
+}
+
+.container {
+    padding: 0px;
+}
+
+.jumbotron {
+    width: 100%;
+    background: rgb(105, 105, 105);
+    background: rgba(105, 105, 105, .5);    
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;  
+    border: 1px solid paleturquoise;
+    top:15px;
+}
+
+
+.panel-primary >.panel-heading {
+    color: aliceblue;
+    font-size: 20px;
+    border-color: paleturquoise;
+    background: rgb(105, 105, 105);
+    background: rgba(105, 105, 105, .5);    
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000; 
+}
+
+.panel-title, th, h2 {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.panel-body, .panel-heading {
+    padding: 7px;
+}
+
+.milTime {
+    font-size: 10px;
+}
+
+#freqDisplay, #nextDisplay {
+    text-align: center;
+}
