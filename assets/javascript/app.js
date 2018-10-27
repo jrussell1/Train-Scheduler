@@ -13,7 +13,7 @@ $(document).ready(function(){
     var database = firebase.database();
 
       
-    // conclick function
+    // onclick function
     $("#submit").on("click", function() {
       
         //variable with value for html
@@ -35,9 +35,7 @@ $(document).ready(function(){
         return false;
     });
       
-    //child ref captures the snapshot
     database.ref().on("child_added", function(childSnapshot){
-        // console.log(childSnapshot.val());
         var name = childSnapshot.val().name;
         var dest = childSnapshot.val().dest;
         var time = childSnapshot.val().time;
@@ -48,7 +46,6 @@ $(document).ready(function(){
         console.log("Time: " + time);
         console.log("Frequency: " + freq);
       
-    // TRAIN TIME================================================
         var freq = parseInt(freq);
           
         var currentTime = moment();
